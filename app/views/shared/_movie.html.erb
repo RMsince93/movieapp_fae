@@ -1,0 +1,10 @@
+<div class="card">
+  <%= link_to movie_path(movie) do %>
+    <div class="card-img-wrapper">
+      <%= image_tag image_path(movie.hero_image.asset.url), class: "card-img-top", alt: movie.title %>
+    </div>
+  <% end %>
+  <div class="card-footer">
+    <h5 class="card-title movie-title"><%= truncate(movie.title, length: 30) %></h5>
+  </div>
+</div>
