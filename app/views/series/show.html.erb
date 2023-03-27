@@ -4,11 +4,17 @@
       <%= image_tag image_path(@tv_show.hero_image.asset.url), class: "card-img-top", alt: @tv_show.title %>
     </div>
     <div class="col">
-      <h1><%= @tv_show.title %></h1>
+      <h1>Title</h1>
+      <p><%= @tv_show.title %></p>
+      <h1>Plot</h1>
       <p><%= @tv_show.plot %></p>
+      <h1>Year</h1>
       <p><%= @tv_show.year %></p>
+      <h1>Genre</h1>
       <p><%= @tv_show.genre %></p>
+      <h1>Seasons</h1>
       <p><%= @tv_show.seasons %></p>
+      <h1>IMDB Rating</h1>
       <p><%= @tv_show.imdb_rating %></p>
     </div>
   </div>
