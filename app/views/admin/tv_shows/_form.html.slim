@@ -14,8 +14,8 @@ ruby:
     = fae_input f, :title
     = fae_input f, :plot
     = fae_input f, :year
-    = fae_input f, :genre
+    = fae_multiselect f, :genres, label: "Genre"
     = fae_input f, :seasons
     = fae_input f, :imdb_rating
     = fae_image_form f, :hero_image
-
+    = fae_input f, :active

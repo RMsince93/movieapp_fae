@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
-  require 'movie'
 
  def index
-  @movies = Movie.all
+  @movies = Movie.all.where(active: true)
  end
 
  def show
@@ -10,4 +9,3 @@ class HomeController < ApplicationController
  end
 
 end
-

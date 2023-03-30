@@ -4,18 +4,18 @@
       <%= image_tag image_path(@movie.hero_image.asset.url), class: "card-img-top", alt: @movie.title %>
     </div>
     <div class="col">
-      <h1>Title</h1>
-      <p><%= @movie.title %></p>
-      <h1>Plot</h1>
-      <p><%= @movie.plot %></p>
-      <h1>Year</h1>
-      <p><%= @movie.year %></p>
-      <h1>Genre</h1>
-      <p><%= @movie.genre %></p>
-      <h1>Run Time</h1>
-      <p><%= @movie.run_time %></p>
-      <h1>IMDB Rating</h1>
-      <p><%= @movie.imdb_rating %></p>
+      <label>Title</label>
+        <p><%= @movie.title %></p>
+      <label>Plot</label>
+        <p><%= @movie.plot %></p>
+      <label>Year</label>
+        <p><%= @movie.year %></p>
+      <label>Genre</label>
+        <p><%= @movie.genres.pluck(:name).join(", ") %></p>
+      <label>Run Time</label>
+        <p><%= @movie.run_time %></p>
+      <label>IMDB Rating</label>
+        <p><%= @movie.imdb_rating %></p>
     </div>
   </div>
 </div>

@@ -7,13 +7,12 @@ Rails.application.routes.draw do
     resources :movies
   end
 
-  mount Fae::Engine => '/admin'
-
-  root 'home#index'
   get 'tv_shows', to: 'series#index'
-
   get 'movies/:id', to: 'home#show', as: 'movie'
   get 'tv_shows/:id', to: 'series#show', as: 'tv_show'
 
-end
+mount Fae::Engine => '/admin'
 
+root 'home#index'
+
+end

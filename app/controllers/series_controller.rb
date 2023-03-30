@@ -1,8 +1,7 @@
 class SeriesController < ApplicationController
- require 'tv_show'
 
  def index
-  @tv_shows = TvShow.all
+  @tv_shows = TvShow.all.where(active: true)
  end
 
  def show
@@ -10,6 +9,3 @@ class SeriesController < ApplicationController
  end
 
 end
-
-
-  
