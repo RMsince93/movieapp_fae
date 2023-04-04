@@ -1,0 +1,17 @@
+div.container
+  div.row
+    div.col
+      = image_tag image_path(@movie.hero_image.asset.url), class: "card-img-top", alt: @movie.title
+    div.col
+      label Title
+      p = @movie.title
+      label Plot
+      p = @movie.plot
+      label Year
+      p = @movie.year
+      label Genre
+      p = @movie.genres.pluck(:name).join(", ")
+      label Run Time
+      p = @movie.run_time
+      label IMDB Rating
+      p = @movie.imdb_rating

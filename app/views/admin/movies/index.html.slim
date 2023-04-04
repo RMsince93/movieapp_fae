@@ -7,6 +7,7 @@ main.content
         th Title
         th.-action-wide Modified
         th.-action data-sorter="false"
+        th Disable/Enable
 
     tbody
       - if @items.present?
@@ -15,5 +16,7 @@ main.content
             td = link_to item.fae_display_field, edit_admin_movie_path(item)
             td = fae_date_format item.updated_at
             td = fae_delete_button item
+            td = fae_toggle item, :active
+         
       - else
-        tr: td colspan="3" No items found
+        tr: td colspan="4" No items found

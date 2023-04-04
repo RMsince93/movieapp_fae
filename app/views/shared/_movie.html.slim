@@ -1,0 +1,8 @@
+div.card.mt-4
+  = link_to movie_path(movie), class: "movie-link" do
+    div.card-img-wrapper
+      = image_tag image_path(movie.hero_image.asset.url), class: "card-img-top", alt: movie.title
+      div.movie-rating= movie.imdb_rating
+    div.card-footer
+      h5.card-title.movie-title= truncate(movie.title, length: 30)
+

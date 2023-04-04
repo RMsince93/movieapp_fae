@@ -45,6 +45,10 @@ label {
      font-size: 20px;
 }
 
+.movie-link {
+    text-decoration: none;
+}
+
 .movie-rating {
     position: absolute;
     top: 50%;
@@ -69,10 +73,6 @@ label {
       border-bottom: 1px solid grey;
   }
 
-  .nav-link {
-      color: white;
-  }
-
   .navbar-brand {
       font-weight: bold;
       font-size: larger;
@@ -90,45 +90,7 @@ label {
     padding: 10px 0;
     color: #fff;
   }
-  
-  @media (max-width: 991px) {
-    .navbar {
-      height: auto;
-    }
-  
-    .navbar-brand {
-      margin-left: 0;
-    }
-  
-    .navbar-nav {
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 10px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .navbar {
-      height: 100px;
-    }
-  
-    .navbar-brand {
-      margin-left: 4rem;
-    }
-  
-    .navbar-nav {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 10px 0;
-    }
-  }
- 
+
  .card {
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -255,5 +217,3 @@ label {
      height: 90px;
      border-top: 1px solid grey;
 }
-
-

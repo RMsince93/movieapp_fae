@@ -1,0 +1,5 @@
+div.container
+  div.row
+    - @tv_shows.each do |tv_show|
+      div.col-lg-3.col-md-4.col-sm-6.mb-4
+        = render partial: 'shared/tv_show', locals: { tv_show: tv_show }

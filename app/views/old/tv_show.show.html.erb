@@ -12,8 +12,8 @@
         <p><%= @tv_show.year %></p>
       <label>Genre</label>
         <p><%= @tv_show.genres.pluck(:name).join(", ") %></p>
-      <label>Seasons</label>
-        <p><%= @tv_show.seasons %></p>
+      <label>Run Time</label>
+        <p><%= @tv_show.run_time %></p>
       <label>IMDB Rating</label>
         <p><%= @tv_show.imdb_rating %></p>
     </div>
