@@ -2,7 +2,7 @@
   <div class="row">
     <% @movies.each do |movie| %>
       <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <%= render partial: 'shared/movie', locals: { movie: movie } %>
+        <%= render partial: 'movie', locals: { movie: movie } %>
       </div>
     <% end %>
   </div>

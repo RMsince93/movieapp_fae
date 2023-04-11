@@ -1,5 +1,5 @@
 div.card.mt-4
-  = link_to tv_show_path(tv_show) do
+  = link_to tv_show_path(tv_show), class: "movie-link" do
     div.card-img-wrapper
       = image_tag image_path(tv_show.hero_image.asset.url), class: "card-img-top", alt: tv_show.title
       div.movie-rating= tv_show.imdb_rating

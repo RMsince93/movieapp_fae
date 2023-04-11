@@ -1,15 +1,12 @@
-header.container-fluid.sticky-top
-  div.row
-    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.text-center
-      button.navbar-toggler.mx-auto type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"
-        span.navbar-toggler-icon
-      div.collapse.navbar-collapse.mx-auto.justify-content-center#navbarMenu
-        ul.navbar-nav.mb-2.mb-lg-0
-          li.nav-item.nav-link
-            = link_to "Movies", root_path, class: "nav-link"
-          li.nav-item.nav-link
-            = link_to "TV Shows", tv_shows_path, class: "nav-link"
-          li.nav-item.nav-link
-            = link_to "Log In", fae_path, class: "nav-link"
-
-
+nav.sticky-top.navbar.navbar-expand-md.navbar-dark.bg-dark.text-center
+  .container-fluid
+    button.navbar-toggler.mx-auto[type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"]
+      span.navbar-toggler-icon
+    #navbarMenu.collapse.navbar-collapse.mx-auto.justify-content-center
+      ul.navbar-nav.mb-2.mb-lg-0
+        li.nav-item.nav-link
+          = link_to "Movies", root_path, class: "nav-link"
+        li.nav-item.nav-link
+          = link_to "TV Shows", tv_shows_path, class: "nav-link"
+        li.nav-item.nav-link
+          = link_to "Log In", fae_path, class: "nav-link", target: "_blank"

@@ -2,7 +2,7 @@
   <div class="row">
     <% @tv_shows.each do |tv_show| %>
       <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <%= render partial: 'shared/tv_show', locals: { tv_show: tv_show } %>
+        <%= render partial: 'tv_show', locals: { tv_show: tv_show } %>
       </div>
     <% end %>
   </div>

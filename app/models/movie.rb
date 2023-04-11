@@ -7,4 +7,6 @@ class Movie < ApplicationRecord
   def fae_display_field
     title
   end
+
+  scope :is_active, -> {where(active: true)}  
 end
